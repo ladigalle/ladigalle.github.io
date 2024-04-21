@@ -1,0 +1,370 @@
+@font-face {
+    font-family: 'EthnocentricRg-Italic';
+    src: local('EthnocentricRg-Italic'), url('../fonts/ethnocentric-rg-it.woff') format('woff');
+}
+@font-face {
+    font-family: 'Opera-Italic';
+    src: local('Opera-Italic'), url('../fonts/opera-it.woff') format('woff');
+}
+@font-face {
+    font-family: 'Opera';
+    src: local('Opera'), url('../fonts/opera.woff') format('woff');
+}
+@font-face {
+    font-family: 'Satisfontory';
+    src: local('Opera'), url('../fonts/Satisfontory_v1.5.woff') format('woff');
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #282828;
+    color: white;
+    /*background-image: url('../images/first-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;*/
+    min-width: 370px;
+    
+    /* margin-left: 1rem; */
+}
+
+header {
+    min-height: 5rem;
+    overflow: hidden;
+    padding: 1rem 1rem;
+
+    /*background-color: #28282870;
+    border-radius: 1rem;*/
+
+    /*background-color: rebeccapurple;*/
+}
+
+header a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    width: 7rem;
+    text-decoration: none;
+    color: white;
+    line-height: 1.5rem;
+    border-radius: 4px;
+}
+
+#logoH {
+    width: 15rem;
+    margin-top: 1rem;
+}
+
+#navbar a:hover {
+    background-color: #444;
+    color: white;
+    font-weight: bold;
+}
+
+#navbar a.active {
+    background-color: white;
+    color: #282828;
+    font-weight: bold;
+}
+
+#navbar {
+    float: right;
+    margin-top: 1rem;
+}
+
+.hamburger {
+    display: none;
+    position: relative;
+    width: 60px;
+    top: 20px;
+    transition-duration: 0.5s;
+    float: right;
+    margin-top: 1rem;
+}
+.hamburger .iconH {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 0.4rem;
+    width: 3rem;
+    border-radius: 1rem;
+    background-color: white;
+}
+.hamburger .iconH:before {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 0.4rem;
+    width: 3rem;
+    border-radius: 1rem;
+    background-color: white;
+    content: "";
+    top: -1rem;
+}
+.hamburger .iconH:after {
+    transition-duration: 0.5s;
+    position: absolute;
+    height: 0.4rem;
+    width: 3rem;
+    border-radius: 1rem;
+    background-color: white;
+    content: "";
+    top: 1rem;
+}
+.hamburger.open .iconH {
+    transition: 0.5s;
+}
+.hamburger.open .iconH:before {
+    transform: rotateZ(-45deg) scaleX(0.75) translate(-1rem, -0.3rem);
+}
+.hamburger.open .iconH:after {
+    transform: rotateZ(45deg) scaleX(0.75) translate(-1rem, 0.3rem);
+}
+.hamburger:hover {
+    cursor: pointer;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h2, h3 {
+    font-family: 'EthnocentricRg-Italic';
+}
+
+
+ /* 
+    --- --- --- --- --- PAGE Accueil (/) --- --- --- --- ---
+*/
+#hero {
+    padding: 1rem 1rem;
+    min-height: 85vh;
+
+    display: flex;
+    align-items: center;
+
+    font-size: x-large;
+
+    border-radius: 1rem 1rem 0 0;
+    border-bottom: #282828 solid 1.5rem;
+
+    background-color: white;
+    color: #282828;
+}
+
+#hero .gh-c1 {
+    width: 66%;
+    float: left;
+
+    font-family: 'Opera-Italic';
+    font-size: xx-large;
+
+    /*background-color: firebrick;*/
+}
+#hero .gh-c2 {
+    width: 34%;
+    float: left;
+
+    /*background-color: fuchsia;*/
+}
+
+#content-1, #content-2, #content-3, #content-4 {
+    padding: 1rem 1rem;
+    
+
+    display: flex;
+    align-items: center;
+
+    background-color: white;
+    color: #282828;
+}
+
+#content-1 p, #content-3 p, #content-3 li, #content-4 p {
+    font-family: 'Opera';
+    font-size: x-large;
+    text-align: justify
+}
+
+
+#content-1 div, #content-2 div, #content-3 div, #content-4 div {
+    padding: 1rem 1rem;
+
+    /*background-color: darkred;
+    border-style: solid;
+    border-color: royalblue;*/
+}
+
+#content-1 .g1-c1 {
+    width: 50%;
+    float: left;
+
+    /*background-color: firebrick;*/
+}
+#content-1 .g1-c2 {
+    width: 50%;
+    float: left;
+
+    /*background-color: fuchsia;*/
+}
+
+#content-2 .g2-c1 {
+    width: 50%;
+    float: left;
+}
+#content-2 .g2-c2 {
+    width: 50%;
+    float: left;
+}
+
+#content-3 .g3-c1 {
+    width: 50%;
+    float: left;
+}
+#content-3 .g3-c2 {
+    width: 50%;
+    float: left;
+}
+
+#content-4 .g4-c1 {
+    width: 50%;
+    float: left;
+}
+#content-4 .g4-c2 {
+    width: 50%;
+    float: left;
+}
+
+#content-4 {
+    border-radius: 0 0 1rem 1rem;
+}
+
+.img-gc {
+    width: 100%;
+    height: auto;
+    border-radius: 5rem 1rem;
+}
+
+
+ /* 
+    --- --- --- --- --- PAGE Mon parcours (/mon-parcours) --- --- --- --- ---
+*/
+#iframe_FR #iframe_EN {
+    width: 100%;
+    height: fit-content;
+}
+
+ /* 
+    --- --- --- --- --- PAGE Mes projets (/mes-projets) --- --- --- --- ---
+*/
+.img-p-gc {
+    width: 65%;
+    height: auto;
+    border-radius: 5rem 1rem;
+}
+
+ /* 
+    --- --- --- --- --- PAGE Contact (/contact) --- --- --- --- ---
+*/
+
+
+footer {
+    min-height: 50px;
+    margin-top: auto;
+    
+    font-family: 'Opera-Italic';
+
+    text-align: center;
+    /*background-color: aqua;*/
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: lightgrey;
+}
+
+@media screen and (max-width: 840px) {
+    header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #navbar {
+        /*display: none;*/
+        float: none;
+        height: 0;
+        margin-top: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s, height 1s linear;
+    }
+
+    #navbar.open {
+        /*display: block;*/
+        height: auto;
+        margin-top: 1rem;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #hero {
+        min-height: 70vh;
+        font-size: larger;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #hero .gh-c1 {
+        width: 100%;
+        font-size: larger;
+        /*background-color: firebrick;*/
+    }
+    #hero .gh-c2 {
+        width: 100%;
+    
+        /*background-color: fuchsia;*/
+    }
+
+    #content-1, #content-2, #content-3, #content-4 {
+        flex-direction: column;
+    }
+
+    #content-1 .g1-c1 {
+        width: 100%;
+    }
+    #content-1 .g1-c2 {
+        width: 100%;
+    }
+    
+    #content-2 .g2-c1 {
+        width: 100%;
+    }
+    #content-2 .g2-c2 {
+        width: 100%;
+    }
+
+    #content-3 .g3-c1 {
+        width: 100%;
+    }
+    #content-3 .g3-c2 {
+        width: 100%;
+    }
+    
+    #content-4 .g4-c1 {
+        width: 100%;
+    }
+    #content-4 .g4-c2 {
+        width: 100%;
+    }
+
+    .img-gc {
+        border-radius: 3rem 1rem;
+    }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="./images/Favicon.png">
+
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Mon parcours - DIGALLLE X</title>
+    </head>
+    <body>
+        <header>
+            <img id="logoH" src="./images/Logo-LDG_Fictive-W.png" alt="DIGALLLE X, a Léopold Di Gallo fictive company"/>
+            <div class="hamburger">
+                <div class="iconH"></div>
+            </div>
+            <div id="navbar">
+                <a href="./">Accueil</a>
+                <a href="./parcours.html" class="active">Mon parcours</a>
+                <a href="./projets.html">Mes projets</a>
+                <!--<a href="./contact.html">Contact</a>-->
+            </div>
+        </header>
+        <section id="content-1">
+            <div class="g1-c1">
+                <h2>Mon parcours</h2>
+                <p>
+                    &nbsp;&nbsp;&nbsp;Etant curieux et passionné par la technologie sous tous ses angles, j'aime découvrir et 
+                    expérimenter une technologie, dès sa sortie, afin de la comprendre et trouver des applications dans mon quotidien.
+                    Je suis également un bricoleur aguerri, travaillant le bois et le plastique, afin concevoir des objets uniques, 
+                    comme des lampes, des boites de rangement, petits animaux (stylo 3D), mais également réparer tout ce qui à besoin 
+                    de l'être, allant de la petite à la grosse électronique / électrique et aussi des meubles ou travaux dans la maison.
+
+                       
+                </p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;Originaire du pays nantais, je suis actuellement en études supérieures à Angers. 
+                    Je prépare un diplôme d'ingénieur en conception électronique (numérique, analogique, RF) à l'ESEO d'Angers.
+                       
+                </p>
+            </div>
+            <div  class="g1-c2" style="display: none;">
+            </div>
+        </section>
+        <section id="content-3">
+            
+            <div class="g3-c1">
+                <h2>Mon Curriculum Vitae (en français)</h2>
+                <iframe id="iframe_FR" src="./files/Curriculum-Vitae_FR.pdf" width="100%" height="500px"> </iframe>
+            </div>
+            <div class="g3-c2">
+                <h2>My Resume (in english)</h2>
+                <iframe id="iframe_EN"src="./files/Resume_EN.pdf" width="100%" height="500px"> </iframe>
+            </div>
+        </section>
+        <footer>
+            <p>Léopold Di Gallo - <a href="https://fr.wikipedia.org/wiki/{{ currentYear }}" target="_blank"><script>document.write(new Date().getFullYear())</script></a> - Tous droits réservés &copy;</p>
+        </footer>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src="./scripts/hamburger.js"></script>
+    </body>
+</html>
